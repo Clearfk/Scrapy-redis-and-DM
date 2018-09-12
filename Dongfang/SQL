@@ -1,0 +1,20 @@
+命令行进入到test数据库
+
+执行以下命令
+#存入商品详细信息
+create table Dongfgoods(
+        good_id int(20) unsigned not null auto_increment,
+        good_url varchar(40) not null,
+        good_title varchar(40) not null,
+        good_price int(40) not null,
+        good_place varchar(20) not null,
+        good_score int(10) not null,
+        primary key(good_id)
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+#存入分布式url的
+
+create table url_list(
+    good_indexurl varchar(40) unsigned not null auto_increment primary key,
+    good_url varchar not null,
+)ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
